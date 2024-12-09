@@ -1,43 +1,44 @@
 import os
-from moviepy.editor import VideoFileClip, concatenate_videoclips, TextClip, CompositeVideoClip
+import re
+from moviepy.editor import VideoFileClip, TextClip, CompositeVideoClip, concatenate_videoclips
 
 
-def merge_videos_with_filenames(folder_path, output_filename):
-    """
-    특정 폴더의 영상을 순차적으로 합치고 각 원본 영상 이름을 우측 상단에 표시합니다.
+def get_sorted_video_files(folder_path):
+    # 파일 목록 가져오기
+    files = [f for f in os.listdir(folder_path) if f.startswith("rl-video-episode") and f.endswith(".mp4")]
 
-    Args:
-        folder_path (str): 영상이 저장된 폴더 경로
-        output_filename (str): 생성될 출력 파일 이름
-    """
-    # 폴더 내 영상 파일 정렬
-    video_files = sorted(
-        [f for f in os.listdir(folder_path) if f.endswith(('.mp4', '.avi', '.mov'))],
-        key=lambda x: int(x.split('-')[-1].split('.')[0])  # 숫자 기반 정렬
-    )
+    # 숫자 순으로 정렬
+    sorted_files = sorted(files, key=lambda x: int(re.search(r'(\d+)', x).group()))
+    return sorted_files
 
-    clips = []
-    for video_file in video_files:
-        video_path = os.path.join(folder_path, video_file)
-        clip = VideoFileClip(video_path)
 
-        # 영상 이름 텍스트 생성
-        text = TextClip(video_file, fontsize=24, color='white', bg_color='black')
-        text = text.set_duration(clip.duration).set_position(("right", "top"))
+def add_filename_overlay(video_path, filename):
+    # 원본 영상 로드
+    video = VideoFileClip(video_path)
 
-        # 텍스트와 영상을 합성
-        composite = CompositeVideoClip([clip, text])
-        clips.append(composite)
+    # 텍스트 오버레이 생성
+    text = TextClip(filename, fontsize=24, color='white').set_position(('right', 'top')).set_duration(video.duration)
+
+    # 텍스트를 원본 영상에 합성
+    composite = CompositeVideoClip([video, text])
+    return composite
+
+
+def merge_videos(folder_path, output_path):
+    sorted_files = get_sorted_video_files(folder_path)
+    video_clips = []
+
+    for file in sorted_files:
+        full_path = os.path.join(folder_path, file)
+        video_with_text = add_filename_overlay(full_path, file)
+        video_clips.append(video_with_text)
 
     # 영상 병합
-    final_clip = concatenate_videoclips(clips, method="compose")
-
-    # 최종 영상 출력
-    final_clip.write_videofile(output_filename, codec="libx264", fps=24)
-    print(f"영상이 {output_filename}로 저장되었습니다.")
+    final_video = concatenate_videoclips(video_clips, method="compose")
+    final_video.write_videofile(output_path, codec="libx264", audio_codec="aac")
 
 
-# 실행 예제
-folder_path = "./videos"  # 영상 폴더 경로
-output_filename = "merged_video.mp4"  # 출력 파일 이름
-merge_videos_with_filenames(folder_path, output_filename)
+# 실행
+folder_path = "YOUR_FOLDER_PATH"  # 영상이 있는 폴더 경로
+output_path = "output_video.mp4"  # 출력 영상 파일 경로
+merge_videos(folder_path, output_path)
