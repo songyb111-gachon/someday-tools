@@ -1,10 +1,16 @@
+<div align="center">
+
 # Someday Tools
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Rust](https://img.shields.io/badge/Rust-Latest-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+</div>
+
 A collection of tools and scripts that might be useful someday! This repository is a personal space to store experiments, utilities, and reusable scripts for various projects.
+
+
 
 ---
 
@@ -70,14 +76,14 @@ Currently, this repository includes the following tools:
 
 ```
 someday-tools/
-│
-├── Image2Pdf.py               # Script for converting images to PDF
-├── create_gif.py              # Script for creating GIFs from images
-├── create_gif_gui.py          # Script with GUI for GIF creation
-├── generate_requirements.py   # Script for generating requirements.txt
-├── 필요한 터미널 명령어.md    # Collection of useful terminal commands
-├── README.md                  # This README file
-└── requirements.txt           # Python dependencies
+├── .gitignore                # Git ignore file
+├── Image2Pdf.py              # Script for converting images to PDF
+├── LICENSE.txt               # License information
+├── README.md                 # This README file
+├── create_gif.py             # Script for creating GIFs from images
+├── create_gif_gui.py         # Script with GUI for GIF creation
+├── generate_requirements.py  # Script for generating requirements.txt
+└── 필요한 터미널 명령어.md   # Collection of useful terminal commands (Linux terminal commands)
 ```
 
 ---
