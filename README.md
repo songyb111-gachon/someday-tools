@@ -85,7 +85,7 @@ someday-tools/
 ## 💡 Future Plans
 
 - Add more tools, such as:
-  - Text-to-Speech converter
+  - Speech-to-Text converter
   - File format converters
   - Data visualization utilities
 - Improve existing tools with better GUIs and additional features.
