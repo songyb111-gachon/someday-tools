@@ -4,8 +4,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white) <!-- Python Blue -->
 ![Rust](https://img.shields.io/badge/Rust-Latest-D87313?logo=rust&logoColor=white) <!-- Rust Orange -->
-![PyCharm](https://img.shields.io/badge/IDE-PyCharm-0A7E8C?logo=pycharm&logoColor=white) <!-- PyCharm Greenish Blue -->
-![Rust Rover](https://img.shields.io/badge/IDE-Rust%20Rover-00ACC1?logo=jetbrains&logoColor=white) <!-- Rust Rover Cyan -->
+![PyCharm](https://img.shields.io/badge/IDE-PyCharm-000000?logo=pycharm&logoColor=white) <!-- PyCharm Greenish Blue -->
+![Rust Rover](https://img.shields.io/badge/IDE-Rust%20Rover-000000?logo=jetbrains&logoColor=white) <!-- Rust Rover Cyan -->
 ![License](https://img.shields.io/badge/License-MIT-4CAF50?logo=open-source-initiative&logoColor=white) <!-- MIT Green -->
 
 </div>
