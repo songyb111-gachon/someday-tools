@@ -10,9 +10,6 @@
 
 </div>
 
-
----
-
 A collection of tools and scripts that might be useful someday! This repository is a personal space to store experiments, utilities, and reusable scripts for various projects.
 
 <p>
