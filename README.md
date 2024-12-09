@@ -2,14 +2,24 @@
 
 # Someday Tools
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Rust](https://img.shields.io/badge/Rust-Latest-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white) <!-- Python Blue -->
+![Rust](https://img.shields.io/badge/Rust-Latest-D87313?logo=rust&logoColor=white) <!-- Rust Orange -->
+![PyCharm](https://img.shields.io/badge/IDE-PyCharm-0A7E8C?logo=pycharm&logoColor=white) <!-- PyCharm Greenish Blue -->
+![Rust Rover](https://img.shields.io/badge/IDE-Rust%20Rover-00ACC1?logo=jetbrains&logoColor=white) <!-- Rust Rover Cyan -->
+![License](https://img.shields.io/badge/License-MIT-4CAF50?logo=open-source-initiative&logoColor=white) <!-- MIT Green -->
 
 </div>
 
+
+---
+
 A collection of tools and scripts that might be useful someday! This repository is a personal space to store experiments, utilities, and reusable scripts for various projects.
 
+<p>
+  <i>
+    * Note: It is optional but highly recommended to use <b>PyCharm</b> for Python development and <b>Rust Rover</b> for Rust development as the primary development environments for this project. Both provide excellent tools for managing virtual environments, debugging, and organizing code efficiently.
+  </i>
+</p>
 
 
 ---
@@ -83,6 +93,7 @@ someday-tools/
 ├── create_gif.py             # Script for creating GIFs from images
 ├── create_gif_gui.py         # Script with GUI for GIF creation
 ├── generate_requirements.py  # Script for generating requirements.txt
+├── requirements.txt          # Python dependencies for the project
 └── 필요한 터미널 명령어.md   # Collection of useful terminal commands (Linux terminal commands)
 ```
 
