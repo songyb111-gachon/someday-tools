@@ -4,8 +4,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white) <!-- Python Blue -->
 ![Rust](https://img.shields.io/badge/Rust-Latest-D87313?logo=rust&logoColor=white) <!-- Rust Orange -->
-![PyCharm](https://img.shields.io/badge/IDE-PyCharm-000000?logo=pycharm&logoColor=white) <!-- PyCharm Greenish Blue -->
-![Rust Rover](https://img.shields.io/badge/IDE-Rust%20Rover-000000?logo=jetbrains&logoColor=white) <!-- Rust Rover Cyan -->
+![PyCharm](https://img.shields.io/badge/IDE-PyCharm-000000?logo=pycharm&logoColor=white)
+![Rust Rover](https://img.shields.io/badge/IDE-RustRover-000000?logo=jetbrains&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-4CAF50?logo=open-source-initiative&logoColor=white) <!-- MIT Green -->
 
 </div>
@@ -14,7 +14,7 @@ A collection of tools and scripts that might be useful someday! This repository 
 
 <p>
   <i>
-    * Note: It is optional but highly recommended to use <b>PyCharm</b> for Python development and <b>Rust Rover</b> for Rust development as the primary development environments for this project. Both provide excellent tools for managing virtual environments, debugging, and organizing code efficiently.
+    * Note: It is optional but highly recommended to use <b>PyCharm</b> for Python development and <b>RustRover</b> for Rust development as the primary development environments for this project. Both provide excellent tools for managing virtual environments, debugging, and organizing code efficiently.
   </i>
 </p>
 
