@@ -115,7 +115,7 @@ This is a personal project, but contributions and suggestions are welcome! Feel 
 
 ## 📝 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
 
